@@ -1,123 +1,107 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Guy with a Backhoe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    header {
+      display: flex;
+      padding: 40px;
+      background: #f4f4f4;
+    }
+    .intro {
+      flex: 1;
+      padding-right: 40px;
+    }
+    .carousel {
+      flex: 1;
+      max-height: 300px;
+      overflow: hidden;
+    }
+    .carousel img {
+      width: 100%;
+      display: none;
+    }
+    .carousel img.active {
+      display: block;
+    }
+    .contact-section {
+      padding: 40px;
+      background: #fff;
+    }
+    form {
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #444;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      padding: 20px;
+      background-color: #222;
+      color: white;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;A Guy with a Backhoe&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #f4f4f4;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.intro {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex: 1;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding-right: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.carousel {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex: 1;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-height: 300px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.carousel img {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.carousel img.active {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.contact-section {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>form {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 500px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>input, textarea {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid #ccc;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 4px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #444;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #222;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="intro"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;A Guy with a Backhoe&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>Local, reliable excavation services. We offer trenching, grading,</p>
-<p class="p1"><span class="Apple-converted-space">        </span>foundation digging, and more. Serving your residential and small</p>
-<p class="p1"><span class="Apple-converted-space">        </span>commercial backhoe needs with quality and care.</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="carousel"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="/images/img1.jpg" class="active" alt="Project 1" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="/images/img2.jpg" alt="Project 2" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="/images/img3.jpg" alt="Project 3" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="contact-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Contact Us&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;form action="mailto:yourname@aguywithabackhoe.com" method="POST" enctype="text/plain"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="text" name="name" placeholder="Your Name" required /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="email" name="email" placeholder="Your Email" required /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;textarea name="message" placeholder="Your Message" rows="5" required&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button type="submit"&gt;Send Message&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Email: yourname@aguywithabackhoe.com&lt;br /&gt;Phone: (123) 456-7890&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&amp;copy; 2025 A Guy with a Backhoe. All rights reserved.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Simple carousel script</p>
-<p class="p1"><span class="Apple-converted-space">    </span>let index = 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const images = document.querySelectorAll('.carousel img');</p>
-<p class="p1"><span class="Apple-converted-space">    </span>setInterval(() =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>images[index].classList.remove('active');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>index = (index + 1) % images.length;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>images[index].classList.add('active');</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}, 3000);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <header>
+    <div class="intro">
+      <h1>A Guy with a Backhoe</h1>
+      <p>
+        Local, reliable excavation services. We offer trenching, grading,
+        foundation digging, and more. Serving your residential and small
+        commercial backhoe needs with quality and care.
+      </p>
+    </div>
+    <div class="carousel">
+      <img src="/images/img1.jpg" class="active" alt="Project 1" />
+      <img src="/images/img2.jpg" alt="Project 2" />
+      <img src="/images/img3.jpg" alt="Project 3" />
+    </div>
+  </header>
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <form action="mailto:yourname@aguywithabackhoe.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: yourname@aguywithabackhoe.com<br />Phone: (123) 456-7890</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 A Guy with a Backhoe. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Simple carousel script
+    let index = 0;
+    const images = document.querySelectorAll('.carousel img');
+    setInterval(() => {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+    }, 3000);
+  </script>
 </body>
 </html>
