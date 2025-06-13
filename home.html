@@ -35,6 +35,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding-left: 40px;
     }
     .carousel img {
       width: 300px; /* Fixed width */
@@ -48,6 +49,16 @@
     .contact-section {
       padding: 40px;
       background: #fff;
+    }
+    .story-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      background: #e9e9e9;
+    }
+    .story-text {
+      flex: 1;
+      padding-right: 20px;
     }
     footer {
       padding: 20px;
@@ -71,11 +82,23 @@
     </div>
   </header>
 
-  <section class="carousel">
-    <img src="images/purchasePic.jpeg" class="active" alt="Purchase Project" />
-    <img src="images/trees.jpeg" alt="Tree Removal Project" />
-    <img src="images/road.jpeg" alt="Road Construction Project" />
-    <img src="images/agwab.JPG" alt="A Guy With A Backhoe Logo" />
+  <section class="story-section">
+    <div class="story-text">
+      <h2>Our Story</h2>
+      <p>
+        For years, we’ve been working around our own property—handling everything from grading to mulching, clearing land to digging trenches—using our trusty backhoe and hard work. Over time, we’ve honed our skills and developed a love for improving the land and the properties we care for. 
+      </p>
+      <p>
+        Now, we’re ready to share that passion and expertise with the community. We offer professional, reliable, and affordable excavation services to help you transform your property, whether it's for residential projects or small commercial jobs. 
+      </p>
+    </div>
+
+    <div class="carousel">
+      <img src="images/purchasePic.jpeg" class="active" alt="Purchase Project" />
+      <img src="images/trees.jpeg" alt="Tree Removal Project" />
+      <img src="images/road.jpeg" alt="Road Construction Project" />
+      <img src="images/agwab.JPG" alt="A Guy With A Backhoe Logo" />
+    </div>
   </section>
 
   <section class="contact-section">
