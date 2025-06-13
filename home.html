@@ -4,87 +4,113 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>A Guy with a Backhoe</title>
+  <link rel="icon" href="/image/agwab.jpeg" type="image/jpeg" />
   <style>
     body {
       margin: 0;
       font-family: sans-serif;
       background-color: #f9f9f9;
+      color: #333;
     }
+
     header {
       display: flex;
       flex-wrap: wrap;
       padding: 40px;
-      background: #d14d00; /* Kubota orange */
-      color: white;
+      background-color: #f4f4f4;
+      align-items: center;
     }
+
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-right: 20px;
+    }
+
     .intro {
       flex: 1;
-      padding-right: 40px;
       min-width: 300px;
+      padding-right: 40px;
     }
+
     .carousel {
       flex: 1;
       max-height: 300px;
       overflow: hidden;
       min-width: 300px;
     }
+
     .carousel img {
       width: 100%;
       display: none;
     }
+
     .carousel img.active {
       display: block;
     }
-    .story-section, .contact-section {
+
+    .about-section,
+    .contact-section {
       padding: 40px;
-      background: #444; /* Kubota gray */
-      color: white;
+      background-color: #ffffff;
     }
+
+    .about-section {
+      background-color: #fefefe;
+    }
+
+    h1, h2 {
+      color: #e57200; /* Kubota Orange */
+    }
+
     footer {
       padding: 20px;
-      background-color: #222;
+      background-color: #4a4a4a; /* Dark Gray */
       color: white;
       text-align: center;
+    }
+
+    a {
+      color: #e57200;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="/image/agwab.jpeg" alt="A Guy with a Backhoe Logo" class="logo" />
     <div class="intro">
       <h1>A Guy with a Backhoe</h1>
       <p>
-        Local, reliable excavation services. We offer trenching, brush clearing,
-        foundation digging, and more. Serving your residential and small
-        commercial backhoe needs with quality and care.
+        Local, reliable excavation services. We offer trenching, light land clearing,
+        foundation digging, and more. Serving your residential and small commercial
+        backhoe needs with quality and care.
       </p>
     </div>
     <div class="carousel">
-      <img src="/images/img1.jpg" class="active" alt="Project 1" />
-      <img src="/images/img2.jpg" alt="Project 2" />
-      <img src="/images/img3.jpg" alt="Project 3" />
+      <img src="/image/road.jpeg" class="active" alt="Road work" />
+      <img src="/image/trees.jpeg" alt="Tree clearing" />
+      <img src="/image/agwab.jpeg" alt="Company branding" />
+      <img src="/image/purchasePic.jpeg" alt="Equipment purchase" />
     </div>
   </header>
 
-  <section class="story-section">
+  <section class="about-section">
     <h2>Our Story</h2>
     <p>
-      We’re a small family with a big piece of land—ten acres we’ve poured our heart and muscle into over the years. From digging trenches for drainage, leveling ground for sheds, and creating garden beds to clearing brush and preparing foundations, we’ve done it all ourselves with the help of our trusty backhoe.
-    </p>
-    <p>
-      What started as weekend projects turned into a passion. We’ve learned what it takes to do things right—and now, we’re ready to help others do the same.
-    </p>
-    <p>
-      <strong>A Guy with a Backhoe</strong> is more than just a name. It’s a neighbor you can count on. We’re proud to offer excavation services to our local community with the same care and reliability we’ve brought to our own property.
-    </p>
-    <p>
-      Let’s build something great—together.
+      We’re a family with a backhoe and ten acres of land who’ve spent years doing our own projects —
+      trenching, mulching, clearing trees, and building better spaces. Now we’re offering that same
+      skill and dedication to our neighbors and community. If you need help improving your property,
+      we’d love to lend a bucket.
     </p>
   </section>
 
   <section class="contact-section">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:tristan@aguywithabackhoe.com" style="color: #ffa">tristan@aguywithabackhoe.com</a><br />
-    Phone: <a href="tel:2152371139" style="color: #ffa">(215) 237-1139</a></p>
+    <p>
+      📧 <a href="mailto:tristan@aguywithabackhoe.com">tristan@aguywithabackhoe.com</a><br />
+      📞 <a href="tel:2152371139">215-237-1139</a>
+    </p>
   </section>
 
   <footer>
@@ -92,7 +118,7 @@
   </footer>
 
   <script>
-    // Simple carousel script
+    // Simple image carousel
     let index = 0;
     const images = document.querySelectorAll('.carousel img');
     setInterval(() => {
