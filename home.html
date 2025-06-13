@@ -25,9 +25,14 @@
       flex: 1;
       max-height: 300px;
       overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .carousel img {
-      width: 100%;
+      width: 300px; /* Fixed width */
+      height: 200px; /* Fixed height */
+      object-fit: cover; /* Ensures images maintain aspect ratio and don't stretch */
       display: none;
     }
     .carousel img.active {
