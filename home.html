@@ -8,15 +8,21 @@
     body {
       margin: 0;
       font-family: sans-serif;
+      background-color: #fff;
+      color: #333;
     }
     header {
       display: flex;
       padding: 40px;
-      background: #f4f4f4;
+      background: #FF6A13; /* Kubota orange */
+      color: white;
     }
     .intro {
       flex: 1;
       padding-right: 40px;
+    }
+    .intro h1 {
+      margin-top: 0;
     }
     .carousel {
       flex: 1;
@@ -32,30 +38,15 @@
     }
     .contact-section {
       padding: 40px;
-      background: #fff;
+      background: #f4f4f4;
     }
-    form {
-      max-width: 500px;
-      margin-bottom: 20px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #444;
-      color: white;
-      border: none;
-      cursor: pointer;
+    .contact-section p {
+      font-size: 18px;
+      line-height: 1.6;
     }
     footer {
       padding: 20px;
-      background-color: #222;
+      background-color: #333;
       color: white;
       text-align: center;
     }
@@ -66,22 +57,9 @@
     <div class="intro">
       <h1>A Guy with a Backhoe</h1>
       <p>
-        Hi, my name is Tristan Jones.  A few years ago we bought a small backhoe to do work around our property.
-        It is a great machine to help with those projects in the yard and I had people tell me all the time that 
-        they had had something to do at their house that would go a lot easier if they knew A Guy with a Backhoe.
-        So I decided to offer my services to the world!
-      <p>
-        
-      </p>  
-        
         Local, reliable excavation services. We offer trenching, grading,
         foundation digging, and more. Serving your residential and small
         commercial backhoe needs with quality and care.
-      <p>
-        
-      </p>
-        If you have a need for some help please do not hesitate to contact me.  You can text or call Tristan at
-        215-237-1139 and let me know how A Guy with a Backhoe can help you!
       </p>
     </div>
     <div class="carousel">
@@ -92,8 +70,10 @@
   </header>
 
   <section class="contact-section">
-   <h2>Contact Us</h2>
-    <p>Email:Tristan@aguywithabackhoe.com<br />Phone: (215) 237-1139</p>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:tristan@aguywithabackhoe.com">tristan@aguywithabackhoe.com</a><br />
+       Phone: <a href="tel:2152371139">(215) 237-1139</a>
+    </p>
   </section>
 
   <footer>
