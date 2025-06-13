@@ -14,9 +14,17 @@
     header {
       display: flex;
       justify-content: space-between;
+      align-items: center; /* Align items vertically */
       padding: 40px;
-      background: #333;
+      background: #f15a29; /* Kubota orange */
       color: white;
+    }
+    .logo {
+      flex: 1;
+    }
+    .logo img {
+      width: 120px; /* Adjust logo size */
+      height: auto;
     }
     .intro {
       flex: 2;
@@ -27,6 +35,9 @@
       text-align: right;
       font-size: 18px;
       line-height: 1.5;
+    }
+    .contact-info p {
+      margin: 5px 0;
     }
     .carousel {
       flex: 1;
@@ -62,14 +73,24 @@
     }
     footer {
       padding: 20px;
-      background-color: #222;
+      background-color: #333;
       color: white;
       text-align: center;
+    }
+    a {
+      color: #f15a29; /* Kubota orange */
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
+    <div class="logo">
+      <img src="images/agwab.JPG" alt="A Guy with a Backhoe Logo" />
+    </div>
     <div class="intro">
       <h1>A Guy with a Backhoe</h1>
       <p>
@@ -86,10 +107,10 @@
     <div class="story-text">
       <h2>Our Story</h2>
       <p>
-        For years, we’ve been working around our own property—handling everything from grading to mulching, clearing land to digging trenches—using our trusty backhoe and hard work. Over time, we’ve honed our skills and developed a love for improving the land and the properties we care for. 
+        For years, we’ve been working around our own property—handling everything from grading to mulching, clearing land to digging trenches—using our trusty backhoe and hard work. Over time, we’ve honed our skills and developed a love for improving the land and the properties we care for.
       </p>
       <p>
-        Now, we’re ready to share that passion and expertise with the community. We offer professional, reliable, and affordable excavation services to help you transform your property, whether it's for residential projects or small commercial jobs. 
+        Now, we’re ready to share that passion and expertise with the community. We offer professional, reliable, and affordable excavation services to help you transform your property, whether it's for residential projects or small commercial jobs.
       </p>
     </div>
 
