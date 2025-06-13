@@ -39,9 +39,16 @@
     .contact-info p {
       margin: 5px 0;
     }
+    .contact-info a {
+      color: white; /* Kubota orange links with white text */
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
     .carousel {
       flex: 1;
-      max-height: 300px;
+      max-height: 400px;
       overflow: hidden;
       display: flex;
       justify-content: center;
@@ -49,17 +56,13 @@
       padding-left: 40px;
     }
     .carousel img {
-      width: 300px; /* Fixed width */
-      height: 200px; /* Fixed height */
+      width: 350px; /* Larger width */
+      height: 250px; /* Larger height */
       object-fit: cover; /* Ensures images maintain aspect ratio and don't stretch */
       display: none;
     }
     .carousel img.active {
       display: block;
-    }
-    .contact-section {
-      padding: 40px;
-      background: #fff;
     }
     .story-section {
       display: flex;
@@ -71,18 +74,17 @@
       flex: 1;
       padding-right: 20px;
     }
+    .contact-section {
+      padding: 40px;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+    }
     footer {
       padding: 20px;
       background-color: #333;
       color: white;
       text-align: center;
-    }
-    a {
-      color: #f15a29; /* Kubota orange */
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -123,8 +125,6 @@
   </section>
 
   <section class="contact-section">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or want to request a service, please feel free to reach out to us.</p>
     <div class="contact-info">
       <p>Email: <a href="mailto:tristan@aguywithabackhoe.com">tristan@aguywithabackhoe.com</a></p>
       <p>Phone: <a href="tel:+12152371139">215-237-1139</a></p>
