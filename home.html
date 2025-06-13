@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>A Guy with a Backhoe</title>
-  <link rel="icon" href="images/agwab.jpeg" type="image/jpeg">
+  <link rel="icon" href="images/agwab.JPG" type="image/jpeg">
   <style>
     body {
       margin: 0;
@@ -13,13 +13,20 @@
     }
     header {
       display: flex;
+      justify-content: space-between;
       padding: 40px;
       background: #333;
       color: white;
     }
     .intro {
-      flex: 1;
+      flex: 2;
       padding-right: 40px;
+    }
+    .contact-info {
+      flex: 1;
+      text-align: right;
+      font-size: 18px;
+      line-height: 1.5;
     }
     .carousel {
       flex: 1;
@@ -42,10 +49,6 @@
       padding: 40px;
       background: #fff;
     }
-    .contact-info {
-      font-size: 18px;
-      line-height: 1.5;
-    }
     footer {
       padding: 20px;
       background-color: #222;
@@ -62,16 +65,22 @@
         Local, reliable excavation services. We offer trenching, mulching, land clearing, and more. Serving your residential and small commercial backhoe needs with quality and care.
       </p>
     </div>
-    <div class="carousel">
-      <img src="images/purchasePic.jpeg" class="active" alt="Purchase Project" />
-      <img src="images/trees.jpeg" alt="Tree Removal Project" />
-      <img src="images/road.jpeg" alt="Road Construction Project" />
-      <img src="images/agwab.jpeg" alt="A Guy With A Backhoe Logo" />
+    <div class="contact-info">
+      <p>Email: <a href="mailto:tristan@aguywithabackhoe.com">tristan@aguywithabackhoe.com</a></p>
+      <p>Phone: <a href="tel:+12152371139">215-237-1139</a></p>
     </div>
   </header>
 
+  <section class="carousel">
+    <img src="images/purchasePic.jpeg" class="active" alt="Purchase Project" />
+    <img src="images/trees.jpeg" alt="Tree Removal Project" />
+    <img src="images/road.jpeg" alt="Road Construction Project" />
+    <img src="images/agwab.JPG" alt="A Guy With A Backhoe Logo" />
+  </section>
+
   <section class="contact-section">
     <h2>Contact Us</h2>
+    <p>If you have any questions or want to request a service, please feel free to reach out to us.</p>
     <div class="contact-info">
       <p>Email: <a href="mailto:tristan@aguywithabackhoe.com">tristan@aguywithabackhoe.com</a></p>
       <p>Phone: <a href="tel:+12152371139">215-237-1139</a></p>
